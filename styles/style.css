@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+ul a {
+    color:white;
+    text-decoration: none;
+}
+nav {
+    background-color: black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.logo{
+    width: 8%;
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+}
+nav ul li {
+    padding-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*  INDEX  */
+.img-texto-inicio{
+    background-image: url('../imgs/armariobyn.png');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+.texto-inicio{
+    font-size: 60px;
+}
+.textos-inicio{
+    background-color: black;
+    color: white;
+    /* display: flex; */
+    padding: 100px;
+    justify-content: space-between;
+}
+.img-seccion{
+    width: 100%;
+}
+footer{
+    background-color: black;
+    margin: 0;
+    padding:0;
+}
+
+.redes{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.contacto{
+    display: flex;
+}
+
+.izq{
+    background-image:url('../imgs/fondo-transp.png');
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+}
+
+.formulario{
+    width: 40%;
+    height: 40rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.legend-form{
+    font-size: 20px;
+    text-align: center;
+}
+.item-form{
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+    border: solid black;
+    background-color: black;
+    color: white;
+}
+.enviar{
+    color: white;
+}
+.secciones-inicio{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "buzos rempant"
+                         "accesorios rempant";
+    padding: 0;
+    margin-top: 30px;
+}
+.remera-pantalon{
+    background-image: url('../imgs/remerapantalon.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: rempant;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.buzos{
+    background-image: url('../imgs/buzo.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: buzos;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.accesorios{
+    background-image: url('../imgs/accesorios.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: accesorios;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.texto-secciones{ 
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+
+/* REMERAS Y PANTALONES */
+
+.grilla-productos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.contenedor-producto{
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-grilla{
+    width: 200px;
+}
+.boton-agregar{
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 50%;
+    border-radius: 5px;
+    
+}
