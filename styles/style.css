@@ -3,31 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-ul {
-    list-style-type: none;
-}
-ul a {
-    color:white;
-    text-decoration: none;
-}
-nav {
-    background-color: black;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-.logo{
-    width: 8%;
-    margin-left: 10px;
-}
-.menu{
-    display: flex;
-    justify-content: end;
-}
-nav ul li {
-    padding-right: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
 
 /*  INDEX  */
 .img-texto-inicio{
@@ -174,4 +149,19 @@ footer{
     width: 50%;
     border-radius: 5px;
     
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px){
+    .secciones-inicio {
+        grid-template-areas: "buzos rempant" "accesorios accesorios";
+    }
+    .grilla-productos{
+        grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+    .contenedor-producto {
+        width: 100%;
+    }
 }
