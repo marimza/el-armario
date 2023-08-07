@@ -3,22 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.minavbar {
-    background-color: black;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-}
-
-.navbar-brand {
-    color: white;
-}
+a:hover {
+    text-decoration: underline;
+  }
 
 /*  INDEX  */
 .img-texto-inicio {
-    background-image: url('../imgs/armariobyn.png');
+    background-image: url('../imgs/imginicio.png');
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -100,9 +91,14 @@ footer {
 
 .texto-secciones {
     background-color: black;
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-size: 40px;
+    transition: 0.5s;
+    
+}
+.texto-secciones:hover{
+    transform: scale(1.1);
 }
 
 /* CONTACTO */
