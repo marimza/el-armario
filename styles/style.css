@@ -1,86 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.minavbar {
+    background-color: black;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
 /*  INDEX  */
-.img-texto-inicio{
+.img-texto-inicio {
     background-image: url('../imgs/armariobyn.png');
     background-position: center;
     background-size: cover;
     height: 500px;
     text-align: center;
 }
-.texto-inicio{
+
+.texto-inicio {
     font-size: 60px;
 }
-.textos-inicio{
+
+.textos-inicio {
     background-color: black;
     color: white;
-    /* display: flex; */
     padding: 100px;
     justify-content: space-between;
 }
-.img-seccion{
+
+.img-seccion {
     width: 100%;
 }
-footer{
+
+footer {
     background-color: black;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-.redes{
-    display:flex;
+.redes {
+    display: flex;
     justify-content: flex-end;
 }
 
-.contacto{
-    display: flex;
-}
-
-.izq{
-    background-image:url('../imgs/fondo-transp.png');
-    background-size: cover;
-    background-position: center;
-    width: 60%;
-}
-
-.formulario{
-    width: 40%;
-    height: 40rem;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
-.legend-form{
-    font-size: 20px;
-    text-align: center;
-}
-.item-form{
-    padding: 5px;
-    margin: 15px;
-    border-radius: 10px;
-    border: solid black;
-    background-color: black;
-    color: white;
-}
-.enviar{
-    color: white;
-}
-.secciones-inicio{
+.secciones-inicio {
     height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "buzos rempant"
-                         "accesorios rempant";
+        "accesorios rempant";
     padding: 0;
     margin-top: 30px;
 }
-.remera-pantalon{
+
+.remera-pantalon {
     background-image: url('../imgs/remerapantalon.jpg');
     background-size: cover;
     background-position: center;
@@ -91,7 +73,8 @@ footer{
     justify-content: space-around;
     flex-direction: column;
 }
-.buzos{
+
+.buzos {
     background-image: url('../imgs/buzo.jpg');
     background-size: cover;
     background-position: center;
@@ -103,7 +86,7 @@ footer{
     flex-direction: column;
 }
 
-.accesorios{
+.accesorios {
     background-image: url('../imgs/accesorios.jpg');
     background-size: cover;
     background-position: center;
@@ -114,17 +97,50 @@ footer{
     justify-content: space-around;
     flex-direction: column;
 }
-.texto-secciones{ 
+
+.texto-secciones {
     background-color: black;
     color: white;
     text-decoration: none;
     font-size: 40px;
 }
 
+/* CONTACTO */
+
+
+.izq {
+    background-image: url('../imgs/fondo-transp.png');
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+}
+
+.formulario {
+    width: 40%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend-form {
+    font-size: 20px;
+    text-align: center;
+}
+
+.item-form {
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+    border: solid black;
+    background-color: black;
+    color: white;
+}
 
 /* REMERAS Y PANTALONES */
 
-.grilla-productos{
+.grilla-productos {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -133,35 +149,61 @@ footer{
     grid-template-rows: auto;
     gap: 30px;
 }
-.contenedor-producto{
+
+.contenedor-producto {
     border: solid black 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.img-grilla{
+
+.img-grilla {
     width: 200px;
 }
-.boton-agregar{
+
+.boton-agregar {
     background-color: black;
     color: white;
     height: 35px;
     width: 50%;
     border-radius: 5px;
-    
+
 }
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .secciones-inicio {
-        grid-template-areas: "buzos rempant" "accesorios accesorios";
+        grid-template-areas: "buzos rempant""accesorios accesorios";
     }
-    .grilla-productos{
+
+    .grilla-productos {
         grid-template-columns: 1fr;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     }
+
     .contenedor-producto {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .textos-inicio {
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 8%;
+    }
+
+    .contacto {
+        flex-direction: column;
+        background-image: url('../imgs/fondo-transp.png');
+    }
+    .formulario{
         width: 100%;
+    }
+    .texto-form{
+        display: none;
     }
 }

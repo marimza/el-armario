@@ -16,62 +16,53 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg minavbar container-fluid">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">El armario</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../Secciones/remeras-pantalones.html">Remeras y
-                                        pantalones</a></li>
-                                <li><a class="dropdown-item" href="../Secciones/buzos.html">Buzos</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../Secciones/accesorios.html">Accesorios</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Secciones/remeras-pantalones.html">Remeras y pantalones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Secciones/buzos.html">Buzos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Secciones/accesorios.html">Accesorios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Secciones/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="¿Qué producto buscas?"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="contacto">
-        <div class="izq">
-            <h2>contactos</h2>
+    <section class="contacto container-fluid d-flex">
+        <div class="izq d-flex flex-column justify-content-center align-items-center">
+            <p class=" texto-form text-black bg-white fs-2">Privet Drive n°4, Little Whinging</p>
+            <p class="text-black texto-form bg-white fs-2">WhatsApp: 123456778</p>
         </div>
         
             <form action="" class="formulario">
-                <legend  class="legend-form">Dejanos tu consulta</legend>
+                <legend class="legend-form">Dejanos tu consulta</legend>
                 <input class="item-form" type="text" placeholder="Nombre">
-                <input class="item-form" class="inputEmail" type="email" placeholder="Email" la name="correo" id="correo">
-                <textarea class="item-form" name="" id="" cols="30" rows="10" placeholder="¿Cuál es tu consulta?"></textarea>
-                <input class="item-form enviar" type="submit" value="Enviar">
+                <input class="item-form" class="inputEmail" type="email" placeholder="Email" la name="correo"
+                    id="correo">
+                <textarea class="item-form" name="" id="" cols="30" rows="10"
+                    placeholder="¿Cuál es tu consulta?"></textarea>
+                <input class="item-form enviar text-white" type="submit" value="Enviar">
             </form>
-        
+       
+
     </section>
 
     <!-- FOOTER -->
