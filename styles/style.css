@@ -129,8 +129,10 @@ footer {
 }
 
 .item-form {
-    padding: 0.5rem;
-    margin: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     border: solid black;
     background-color: black;
@@ -202,10 +204,7 @@ footer {
 
     .izq {
         width: 100%
-    }
-
-    .formulario {
-        width: 100%;
+        
     }
 
     .texto-form {
@@ -213,7 +212,7 @@ footer {
     }
 
     .texto-secciones {
-        font-size: 50px;
+        font-size: 17px;
     }
 
 }
