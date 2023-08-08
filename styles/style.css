@@ -127,8 +127,8 @@ footer {
 }
 
 .item-form {
-    padding: 5px;
-    margin: 15px;
+    padding: 0.5rem;
+    margin: 1rem;
     border-radius: 10px;
     border: solid black;
     background-color: black;
