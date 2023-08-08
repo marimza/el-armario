@@ -197,7 +197,6 @@ footer {
         flex-direction: column;
         background-image: url('../imgs/fondo-transp.png');
         background-size: cover;
-    background-position: center;
     }
     .formulario{
         width: 100%;
