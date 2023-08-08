@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a:hover {
     text-decoration: underline;
-  }
+}
 
 /*  INDEX  */
 .img-texto-inicio {
@@ -96,9 +97,10 @@ footer {
     text-decoration: none;
     font-size: 35px;
     transition: 0.5s;
-    
+
 }
-.texto-secciones:hover{
+
+.texto-secciones:hover {
     transform: scale(1.1);
 }
 
@@ -195,17 +197,23 @@ footer {
 
     .contacto {
         flex-direction: column;
-        background-image: url('../imgs/fondo-transp.png');
-        background-size: cover;
+        justify-content: center;
     }
-    .formulario{
+
+    .izq {
+        width: 100%
+    }
+
+    .formulario {
         width: 100%;
     }
-    .texto-form{
-        display: none;
+
+    .texto-form {
+        font-size: 15px;
     }
-    .texto-secciones{
-        font-size: 17px;
+
+    .texto-secciones {
+        font-size: 50px;
     }
-    
+
 }
