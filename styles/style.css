@@ -1,50 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f5f0;
+}
+
 a:hover {
     text-decoration: underline;
 }
 
-/*  INDEX  */
-.img-texto-inicio {
-    background-image: url('../imgs/imginicio.png');
-    background-position: center;
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    border-top: solid grey 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*------  INDEX ------ */
+
+.banner {
+    background-image: linear-gradient(100deg, #000000, #00000020), url('../imgs/imginicio5.png');
+    /* background-position: center; */
     background-size: cover;
-    height: 550px;
-    text-align: center;
+    height: 600px;
 }
 
-.texto-inicio {
-    font-size: 1.5rem;
+.texto-banner {
+    font-size: 40px;
 }
 
-.textos-inicio {
-    background-color: black;
-    color: white;
+
+.linea-informes {
     padding-top: 3%;
     padding-bottom: 3%;
     justify-content: space-around;
 }
 
-.img-seccion {
-    width: 100%;
+.informe {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
 }
 
-footer {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.redes {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.secciones-inicio {
+.categorias {
     height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,7 +62,6 @@ footer {
     grid-template-areas: "buzos rempant"
         "accesorios rempant";
     padding: 0;
-    /* margin-top: 30px; */
 }
 
 .remera-pantalon {
@@ -93,11 +102,9 @@ footer {
 
 .texto-secciones {
     background-color: black;
-    /* color: white; */
     text-decoration: none;
     font-size: 35px;
     transition: 0.5s;
-
 }
 
 .texto-secciones:hover {
@@ -137,6 +144,7 @@ footer {
     border: solid black;
     background-color: black;
     color: white;
+    width: 15rem;
 }
 
 /* REMERAS Y PANTALONES */
@@ -144,31 +152,39 @@ footer {
 .grilla-productos {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 25px;
 }
 
 .contenedor-producto {
-    border: solid black 1px;
+    background-color: white;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .img-grilla {
-    width: 200px;
+    width: 11rem;
 }
+
+.nombre-producto {
+    font-size: 1.5rem;
+}
+
 
 .boton-agregar {
     background-color: black;
     color: white;
-    height: 35px;
     width: 50%;
-    border-radius: 5px;
-
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 5px;
 }
 
 /* MEDIA QUERY */
@@ -205,7 +221,11 @@ footer {
     .izq {
         width: 100%;
         height: 200px;
-        
+
+    }
+
+    .formulario {
+        width: 90%;
     }
 
     .texto-form {
@@ -216,4 +236,11 @@ footer {
         font-size: 17px;
     }
 
+    .texto-banner {
+        font-size: 17px;
+    }
+
+    .informe {
+        font-size: 10px;
+    }
 }

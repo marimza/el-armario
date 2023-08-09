@@ -53,37 +53,39 @@
         </nav>
     </header>
 
-    <!--IMAGEN DE INICIO CON TEXTO ENCIMA  -->
-    <section class="img-texto-inicio container-fluid d-flex justify-content-center align-items-center ">
-        <h3 class="texto-inicio" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="500">Tu Estilo,</h3>
-        <h3 class="texto-inicio" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1000">Tu Historia,</h3>
-        <h3 class="texto-inicio" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500">Tu Moda</h3>
+    <!--BANNER  -->
+    <section class="banner container-fluid d-flex flex-column justify-content-center align-items-center ">
+        <div class="d-flex justify-content-center align-items-center">
+            <span class="texto-banner text-white" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="500">Tu Estilo,
+            </span>
+            <span class="texto-banner text-white" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1000">Tu Historia,
+            </span>
+            <span class="texto-banner text-white" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">Tu Moda</span>
+        </div>
+        <div>
+            <button class="bg-white text-black mt-3 p-1 boton-ver rounded-pill" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="1500">Ver produtos</button>
+        </div>
     </section>
 
-    <!-- TEXTOS QUE SIGUEN -->
-    <section class="textos-inicio container-fluid d-flex">
-        <h3 class="texto-inicio">Envíos a toda la Argentina</h3>
-        <h3 class="texto-inicio">Múltiples formas de pago</h3>
-        <h3 class="texto-inicio">Cuotas sin interés</h3>
+    <!-- LINEA DE INFORMES-->
+    <section class="linea-informes container-fluid d-flex bg-black">
+        <span class="informe text-white">Envíos a toda la Argentina</span>
+        <span class="informe text-white">Múltiples formas de pago</span>
+        <span class="informe text-white">Cuotas sin interés</span>
     </section>
 
 
-    <!-- SECCIONES-->
-    <section class="secciones-inicio container-fluid" data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="1500">
+    <!-- CATEGORÍAS-->
+    <section class="categorias container-fluid">
         <div class="remera-pantalon">
             <a class="texto-secciones text-white" href="./Secciones/remeras-pantalones.html">REMERAS Y PANTALONES</a>
         </div>
         <div class="buzos">
-            <a class="texto-secciones text-white" href="./Secciones/buzos.html">BUZOS</a> </h2>
-
+            <a class="texto-secciones text-white" href="./Secciones/buzos.html">BUZOS</a>
         </div>
         <div class="accesorios">
             <a class="texto-secciones text-white" href="./Secciones/accesorios.html">ACCESORIOS</a>
@@ -92,14 +94,33 @@
 
 
     <!-- FOOTER -->
-    <footer class="container-fluid">
-        <div class="redes">
-            <a href="https://es-la.facebook.com/" target="_blank"><img src="./imgs/icons8-facebook-50.png"
-                    alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/icons8-instagram-50.png"
-                    alt="Instagram"></a>
-        </div>
+    <footer class="container-fluid bg-black">
+        <div class="d-flex justify-content-between">
+            <div class="text-secondary-emphasis">
+                <p>Información de Contacto</p>
+                <ul>
+                    <li>
+                        Dirección: Privet Drive N°4, Little Whinging
+                    </li>
+                    <li>Teléfono: 999-999-9999</li>
+                    <li>Email: Elarmario@support.com</li>
+                </ul>
+            </div>
 
+            <div class="redes">
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="./imgs/icons8-facebook-50.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/icons8-instagram-50.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                SE ACEPTAN TODOS LOS MEDIOS DE PAGOS :)
+            </p>
+
+            <img src="./imgs/payment.png" alt="Pagos">
+        </div>
     </footer>
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
